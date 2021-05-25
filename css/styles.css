@@ -1,3 +1,54 @@
+/* GENERAL */
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+.header-container {
+  height: 154px;
+}
+
+.header-up {
+  height: 50%;
+  display: flex;
+  /* align-items: center; */
+}
+
+.header-left {
+  display: flex;
+  justify-content: left;
+}
+
+.header-right {
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 35px;
 }
