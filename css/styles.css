@@ -43,6 +43,7 @@ img {
 .header-left {
   display: flex;
   justify-content: left;
+  align-items: center;
 }
 
 .header-right {
@@ -51,4 +52,41 @@ img {
 
 .header-logo {
   margin-right: 35px;
+}
+
+.header-down {
+  display: flex;
+  /* padding-right: 45px;
+  padding-left: 45px; */
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* OFFERS */
+.card {
+  display: flex;
+}
+
+.room-advert {
+  margin-left: auto;
+}
+
+/* SERVICE */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1 0 50%;
 }
