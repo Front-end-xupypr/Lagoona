@@ -88,5 +88,24 @@ img {
 }
 
 .service-item {
-  flex: 1 0 50%;
+  flex: 1 1 50%;
+}
+
+/* ADVANTAGES */
+.advant-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advant-item {
+  flex: 1 1 25%;
+  max-width: 242px;
+}
+
+.advant-item:not(:nth-child(4n)) {
+  margin-right: 50px;
+}
+
+.advant-item:not(:nth-child(n+5)) {
+  margin-bottom: 25px;
 }
