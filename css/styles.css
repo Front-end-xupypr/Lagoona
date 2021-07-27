@@ -109,3 +109,14 @@ img {
 .advant-item:not(:nth-child(n+5)) {
   margin-bottom: 25px;
 }
+
+/* ACOMMODATION */
+.acommod-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.acommod-item {
+  flex: 1 1 13,3%;
+  margin-right: 170px;
+}
