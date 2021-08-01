@@ -3,8 +3,36 @@
   box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller Regular'),
+		url('../fonts/MullerRegular.woff') format('woff'),
+    url('../fonts/MullerRegular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller Medium'),
+		url('../fonts/MullerMedium.woff') format('woff'),
+    url('../fonts/MullerMedium.woff2') format('woff2');
+	font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local('Muller Bold'),
+		url('../fonts/MullerBold.woff') format('woff'),
+    url('../fonts/MullerBold.woff2') format('woff2');
+	font-weight: 700;
+  font-style: normal;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Muller', sans-serif;
+  background-color: #E5E5E5;
 }
 
 .container {
@@ -29,8 +57,21 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  padding: 13px 20px;
+  background-color: #fff;
+  color: #CC9933;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
 /* HEADER */
 .header-container {
+  margin-top: 30px;
+  margin-bottom: 70px;
   height: 154px;
 }
 
@@ -46,8 +87,29 @@ img {
   align-items: center;
 }
 
+.header-phone {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #666666;
+}
+
 .header-right {
+  display: flex;
   margin-left: auto;
+}
+
+.cabinet {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #CC9933;
+}
+
+.tab-cabinet {
+  margin-top: 15px;
+  margin-right: 5px;
+  transform: translateY(+1px);
 }
 
 .header-logo {
@@ -56,25 +118,103 @@ img {
 
 .header-down {
   display: flex;
-  /* padding-right: 45px;
-  padding-left: 45px; */
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .header-nav {
-  margin-right: auto;
+  padding-left: 45px;
 }
 
 .nav-list {
   display: flex;
 }
 
+.nav-item {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.nav-link {
+  color: #666;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
 .nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-client {
+  height: 50px;
+  margin-left: 56px;
+  padding-left: 56px;
+  border-left: 1px solid #e1e1e1;
+}
+
+.header-btn {
+  transform: translateY(+3px);
+}
+
+.header-btn:not(:last-child) {
   margin-right: 40px;
 }
 
 /* OFFERS */
+.offers {
+  margin-bottom: 70px;
+}
+
+.section-headers {
+  margin-top: 0;
+  padding-left: 40px;
+  font-size: 40;
+  font-weight: 400;
+  line-height: 100%;
+  color: #333;
+}
+
 .card {
   display: flex;
+}
+
+.maldives {
+  height: 258px;
+  width: 573px;
+  background-image: url(../img/png/maldives.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tour-h2 {
+  margin: 0;
+  font-size: 40;
+  font-weight: 700;
+  line-height: 100%;
+  color: #fff;
+}
+
+.tour-name {
+  padding: 40px 234px 40px 40px;
+}
+
+.tour-price {
+  margin: 0;
+  padding: 15px 185px 47px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #d2dadc;
+}
+
+.tour-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #FFCC66;
 }
 
 .room-advert {
