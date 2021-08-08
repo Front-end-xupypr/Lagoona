@@ -78,7 +78,7 @@ img {
 .header-up {
   height: 50%;
   display: flex;
-  /* align-items: center; */
+  margin-bottom: 30px;
 }
 
 .header-left {
@@ -170,7 +170,7 @@ img {
 .section-headers {
   margin-top: 0;
   padding-left: 40px;
-  font-size: 40;
+  font-size: 40px;
   font-weight: 400;
   line-height: 100%;
   color: #333;
@@ -183,7 +183,17 @@ img {
 .maldives {
   height: 258px;
   width: 573px;
+  margin-bottom: 25px;
   background-image: url(../img/png/maldives.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.krit {
+  height: 258px;
+  width: 573px;
+  background-image: url(../img/png/krit.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -191,7 +201,7 @@ img {
 
 .tour-h2 {
   margin: 0;
-  font-size: 40;
+  font-size: 40px;
   font-weight: 700;
   line-height: 100%;
   color: #fff;
@@ -203,7 +213,7 @@ img {
 
 .tour-price {
   margin: 0;
-  padding: 15px 185px 47px 0px;
+  padding: 15px 180px 47px 0px;
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
@@ -217,21 +227,135 @@ img {
   color: #FFCC66;
 }
 
+.v {
+  transform: translateY(+5px);
+
+}
+
 .room-advert {
-  margin-left: auto;
+  height: 540px;
+  width: 573px;
+  margin-left: 25px;
+  background-image: url(../img/png/lux.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.room-h1 {
+  margin: 0;
+  padding: 211px 234px 15px 40px ;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #fff;
+}
+
+.room-price {
+  margin: 0;
+  padding: 0px 380px 47px 40px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #d2dadc;
+}
+
+.room-more {
+  padding: 0px 430px 41px 40px;
+}
+
+/* ABOUT US */
+
+.about-us {
+  margin-bottom: 70px;
+}
+
+.about-us-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000;
 }
 
 /* SERVICE */
+
+.service {
+  margin-bottom: 50px;
+}
+
 .service-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.service-item {
-  flex: 1 1 50%;
+.service-item  {
+  flex: 1 1 auto;
+}
+
+.cd {
+  width: 573px;
+  height: 330px;
+}
+
+.cd-1 {
+  padding-right: 25px;
+  margin-bottom: 25px;
+  background-image: url(../img/png/card-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-2 {
+  margin-bottom: 25px;
+  background-image: url(../img/png/card-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-3 {
+  padding-right: 25px;
+  background-image: url(../img/png/card-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-4 {
+  margin-bottom: 25px;
+  background-image: url(../img/png/card-4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.service-txt {
+  padding: 190px 110px 35px 45px;
+}
+
+.service-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  color: #CC9933;
+}
+
+.v-service {
+  transform: translateY(+4px);
+  color: #CC9933;
+}
+
+.service-description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  color: #000;
 }
 
 /* ADVANTAGES */
+
+.advantages {
+  margin-bottom: 70px;
+}
+
 .advant-list {
   display: flex;
   flex-wrap: wrap;
@@ -239,15 +363,30 @@ img {
 
 .advant-item {
   flex: 1 1 25%;
-  max-width: 242px;
+  height: 275px;
+  max-width: 275px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .advant-item:not(:nth-child(4n)) {
-  margin-right: 50px;
+  margin-right: 23px;
 }
 
 .advant-item:not(:nth-child(n+5)) {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+}
+
+.advant-icon {
+  padding: 42px 166px 0px 45px;
+}
+
+.advant-description {
+  padding: 8px 42px 41px 45px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+  color: #000;
 }
 
 /* ACOMMODATION */
@@ -257,6 +396,134 @@ img {
 }
 
 .acommod-item {
+  height: 440px;
+  width: 374px;
   flex: 1 1 13,3%;
-  margin-right: 170px;
+}
+
+.acommod-item:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.acommod-1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-3 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-4 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-5 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-5.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-6 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-6.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-7 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-7.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-8 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-8.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-9 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/png/ht-9.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.acommod-price {
+  display: inline-block;
+  margin: 0;
+  padding: 253px 45px 0px 45px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  color: #000;
+}
+
+.all-variant {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #fff;
+}
+
+.acommod-9-link {
+  padding: 373px 40px 27px 54px;
+}
+
+.acommod-name {
+  padding-right: 138px;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.acommod-location {
+  padding-right: 138px;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
+}
+
+.stars {
+  display: inline-block;
+}
+
+.stars:not(:last-child) {
+  margin-right: 6px;
+}
+
+.acommod-btn {
+  margin: 20px 229px 41px 45px ;
 }
