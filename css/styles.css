@@ -293,13 +293,14 @@ img {
 }
 
 .cd {
-  width: 573px;
+  width: 570px;
   height: 330px;
 }
 
 .cd-1 {
   padding-right: 25px;
   margin-bottom: 25px;
+  margin-right: 25px;
   background-image: url(../img/png/card-1.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -314,6 +315,7 @@ img {
 
 .cd-3 {
   padding-right: 25px;
+  margin-right: 25px;
   background-image: url(../img/png/card-3.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -398,6 +400,7 @@ img {
 .acommod-item {
   height: 440px;
   width: 374px;
+  margin-bottom: 23px;
   flex: 1 1 13,3%;
 }
 
@@ -408,65 +411,62 @@ img {
 .acommod-1 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-1.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.acommod-photo {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .acommod-2 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-2.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-3 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-3.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-4 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-4.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-5 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-5.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-6 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-6.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-7 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-7.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-8 {
   height: 100%;
   width: 100%;
-  background-image: url(../img/png/ht-8.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .acommod-9 {
@@ -480,7 +480,7 @@ img {
 .acommod-price {
   display: inline-block;
   margin: 0;
-  padding: 253px 45px 0px 45px;
+  padding: 36px 45px 0px 45px;
   font-weight: 400;
   font-size: 20px;
   line-height: 16px;
