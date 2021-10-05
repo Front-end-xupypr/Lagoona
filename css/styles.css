@@ -527,3 +527,57 @@ img {
 .acommod-btn {
   margin: 20px 229px 41px 45px ;
 }
+
+/* FORM */
+.section-form {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.form {
+  padding-top: 38px;
+  padding-right: 45px;
+  padding-bottom: 71px;
+  padding-left: 45px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.form-header {
+  margin-bottom: 19px;
+  padding: 0px;
+}
+
+.form-box {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-box {
+  margin: 28px 0px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box:not(:last-child) {
+  border-right: 1px solid #e1e1e1;
+}
+
+
+.input-header {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  flood-color: #000;
+}
+
+.form-btn {
+  margin: 28px 0px 28px 0px;
+}
