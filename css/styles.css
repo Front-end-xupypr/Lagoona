@@ -66,6 +66,26 @@ img {
   font-weight: 400;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.btn:focus,
+.btn:hover {
+  color: white;
+  background-color: #cc9933;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  color: white;
+  background-color: #a47312;
+  border-radius: 10px;
 }
 
 /* HEADER */
@@ -92,11 +112,39 @@ img {
   font-weight: 500;
   line-height: 100%;
   color: #666666;
+  transition: color .2s ease;
+}
+
+.header-phone:focus {
+  color: #CC9933;
+  border: 1px solid #CC9933;
+}
+
+.header-phone:hover {
+  color: #CC9933;
+}
+
+.header-phone:active {
+  color: #a47312;
 }
 
 .header-right {
   display: flex;
   margin-left: auto;
+  height: fit-content;
+  transition: color .2s ease;
+}
+
+.header-right:focus {
+  border: 1px solid #cc9933;
+}
+
+.header-right:hover .cabinet {
+  color: #e9c479;
+}
+
+.header-right:active {
+  color: #a47312;
 }
 
 .cabinet {
@@ -110,6 +158,10 @@ img {
   margin-top: 15px;
   margin-right: 5px;
   transform: translateY(+1px);
+}
+
+.header-right:hover .tab-cabinet path {
+  fill: #e9c479;
 }
 
 .header-logo {
@@ -141,6 +193,19 @@ img {
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
+  transition: color .2s ease;
+}
+
+.nav-link:focus {
+  border: 1px solid #cc9933;
+}
+
+.nav-link:hover {
+  color: #e9c479;
+}
+
+.nav-link:active {
+  color: #a47312;
 }
 
 .nav-item:not(:last-child) {
@@ -225,6 +290,18 @@ img {
   font-weight: 400;
   line-height: 100%;
   color: #FFCC66;
+}
+
+.tour-link:focus {
+  border: 1px solid #FFCC66;
+}
+
+.tour-link:hover {
+  color: #e9c479;
+}
+
+.tour-link:active {
+  color: white;
 }
 
 .v {
@@ -337,6 +414,19 @@ img {
   font-weight: 500;
   line-height: 200%;
   color: #CC9933;
+  transition: color .2s ease;
+}
+
+.service-link:focus {
+  border: 1px solid #CC9933;
+}
+
+.service-link:hover {
+  color: #e9c479;
+}
+
+.service-link:active {
+  color: #a47312;
 }
 
 .v-service {
@@ -603,7 +693,8 @@ img {
 }
 
 .select {
-  appearance: none;
+  -webkit-appearance: none;
+  border: none;
 }
 
 .box-1 {
@@ -695,6 +786,19 @@ img {
 
 .contacts-link {
   color: #CC9933;
+  transition: color .2s ease;
+}
+
+.contacts-link:focus {
+  border: 1px solid #cc9933;
+}
+
+.contacts-link:hover {
+  color: #e9c479;
+}
+
+.contacts-link:active {
+  color: #a47312;
 }
 
 table {
@@ -776,11 +880,28 @@ td {
   flex-direction: column;
 }
 
+.social-icon {
+  display: block;
+}
+
 .icon-trip {
   height: 25px;
   width: 25px;
   background-image: url(../img/svg/tripadvisor.svg);
   background-repeat: no-repeat;
+  transition: background-image .2s ease;
+}
+
+.icon-trip:focus {
+  background-image: url(../img/svg/trip-hover.svg);
+}
+
+.icon-trip:hover {
+  background-image: url(../img/svg/trip-hover.svg);
+}
+
+.icon-trip:active {
+  background-image: url(../img/svg/trip-active.svg);
 }
 
 .icon-twit {
@@ -807,7 +928,7 @@ td {
 .icon-inst {
   height: 25px;
   width: 25px;
-  background-image: url(../img/svg/instagram.svg);
+  background-image: url(../img/svg/inst.svg);
   background-repeat: no-repeat;
 }
 
