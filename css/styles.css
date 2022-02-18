@@ -41,6 +41,7 @@ html {
   --gold-light: #e9c479;
   --white: #fff;
   --grey: #c4c4c4;
+  --gold-focus: #FFCC66;
 }
 
 .container {
@@ -126,7 +127,7 @@ img {
 
 .header-phone:focus {
   color: var(--gold);
-  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold-focus);
 }
 
 .header-phone:hover {
@@ -145,7 +146,7 @@ img {
 }
 
 .header-right:focus {
-  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold-focus);
 }
 
 .header-right:hover .cabinet {
@@ -205,7 +206,7 @@ img {
 }
 
 .nav-link:focus {
-  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold-focus);
 }
 
 .nav-link:hover {
@@ -254,36 +255,24 @@ img {
 }
 
 .maldives {
-  position: relative;
   height: 258px;
   width: 573px;
   margin-bottom: 25px;
-  background-image: url(../img/png/maldives.png);
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/png/maldives.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.maldives::before,
-.krit::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
   border-radius: 15px;
 }
 
 .krit {
-  position: relative;
   height: 258px;
   width: 573px;
-  background-image: url(../img/png/krit.png);
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/png/krit.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 15px;
 }
 
 .tour-h2 {
@@ -311,11 +300,11 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
-  color: #FFCC66;
+  color: var(--gold-focus);
 }
 
 .tour-link:focus {
-  border: 1px solid #FFCC66;
+  border: 1px solid var(--gold-focus);
 }
 
 .tour-link:hover {
@@ -335,10 +324,11 @@ img {
   height: 540px;
   width: 573px;
   margin-left: 25px;
-  background-image: url(../img/png/lux.png);
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/png/lux.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 15px;
 }
 
 .room-h1 {
@@ -440,7 +430,7 @@ img {
 }
 
 .service-link:focus {
-  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold-focus);
 }
 
 .service-link:hover {
@@ -824,7 +814,7 @@ img {
 }
 
 .contacts-link:focus {
-  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold-focus);
 }
 
 .contacts-link:hover {
