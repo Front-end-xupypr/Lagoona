@@ -35,6 +35,14 @@ html {
   background-color: #E5E5E5;
 }
 
+:root {
+  --gold: #cc9933;
+  --gold-dark: #a47312;
+  --gold-light: #e9c479;
+  --white: #fff;
+  --grey: #c4c4c4;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -59,12 +67,12 @@ img {
 
 .btn {
   padding: 13px 20px;
-  background-color: #fff;
-  color: #CC9933;
+  background-color: var(--white);
+  color: var(--gold);
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--gold);
   border-radius: 10px;
   transition-property: background-color, color;
   transition-duration: .2s;
@@ -73,8 +81,8 @@ img {
 
 .btn:focus,
 .btn:hover {
-  color: white;
-  background-color: #cc9933;
+  color: var(--white);
+  background-color: var(--gold);
   border-radius: 10px;
 }
 
@@ -83,8 +91,8 @@ img {
 }
 
 .btn:active {
-  color: white;
-  background-color: #a47312;
+  color: var(--white);
+  background-color: var(--gold-dark);
   border-radius: 10px;
 }
 
@@ -98,6 +106,7 @@ img {
 .header-up {
   height: 50%;
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -116,16 +125,16 @@ img {
 }
 
 .header-phone:focus {
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: var(--gold);
+  border: 1px solid var(--gold);
 }
 
 .header-phone:hover {
-  color: #CC9933;
+  color: var(--gold);
 }
 
 .header-phone:active {
-  color: #a47312;
+  color: var(--gold-dark);
 }
 
 .header-right {
@@ -136,32 +145,31 @@ img {
 }
 
 .header-right:focus {
-  border: 1px solid #cc9933;
+  border: 1px solid var(--gold);
 }
 
 .header-right:hover .cabinet {
-  color: #e9c479;
+  color: var(--gold-light);
 }
 
 .header-right:active {
-  color: #a47312;
+  color: var(--gold-dark);
 }
 
 .cabinet {
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
-  color: #CC9933;
+  color: var(--gold);
 }
 
 .tab-cabinet {
-  margin-top: 15px;
   margin-right: 5px;
   transform: translateY(+1px);
 }
 
 .header-right:hover .tab-cabinet path {
-  fill: #e9c479;
+  fill: var(--gold-light);
 }
 
 .header-logo {
@@ -171,7 +179,7 @@ img {
 .header-down {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -197,15 +205,15 @@ img {
 }
 
 .nav-link:focus {
-  border: 1px solid #cc9933;
+  border: 1px solid var(--gold);
 }
 
 .nav-link:hover {
-  color: #e9c479;
+  color: var(--gold-light);
 }
 
 .nav-link:active {
-  color: #a47312;
+  color: var(--gold-dark);
 }
 
 .nav-item:not(:last-child) {
@@ -246,6 +254,7 @@ img {
 }
 
 .maldives {
+  position: relative;
   height: 258px;
   width: 573px;
   margin-bottom: 25px;
@@ -255,7 +264,20 @@ img {
   background-position: center center;
 }
 
+.maldives::before,
+.krit::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  border-radius: 15px;
+}
+
 .krit {
+  position: relative;
   height: 258px;
   width: 573px;
   background-image: url(../img/png/krit.png);
@@ -269,7 +291,7 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: 100%;
-  color: #fff;
+  color: var(--white);
 }
 
 .tour-name {
@@ -297,11 +319,11 @@ img {
 }
 
 .tour-link:hover {
-  color: #e9c479;
+  color: var(--gold-light);
 }
 
 .tour-link:active {
-  color: white;
+  color: var(--white);
 }
 
 .v {
@@ -325,7 +347,7 @@ img {
   font-size: 60px;
   font-weight: 700;
   line-height: 100%;
-  color: #fff;
+  color: var(--white);
 }
 
 .room-price {
@@ -413,25 +435,25 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
-  color: #CC9933;
+  color: var(--gold);
   transition: color .2s ease;
 }
 
 .service-link:focus {
-  border: 1px solid #CC9933;
+  border: 1px solid var(--gold);
 }
 
 .service-link:hover {
-  color: #e9c479;
+  color: var(--gold-light);
 }
 
 .service-link:active {
-  color: #a47312;
+  color: var(--gold-dark);
 }
 
 .v-service {
   transform: translateY(+4px);
-  color: #CC9933;
+  color: var(--gold);
 }
 
 .service-description {
@@ -457,7 +479,7 @@ img {
   flex: 1 1 25%;
   height: 275px;
   max-width: 275px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -501,7 +523,7 @@ img {
 .acommod-1 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -513,49 +535,49 @@ img {
 .acommod-2 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-3 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-4 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-5 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-6 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-7 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .acommod-8 {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -581,10 +603,22 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #fff;
+  color: var(--white);
+}
+
+.all-variant::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .acommod-9-link {
+  position: relative;
   padding: 373px 40px 27px 54px;
 }
 
@@ -638,7 +672,7 @@ img {
 }
 
 .form-box {
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -714,7 +748,7 @@ img {
 }
 
 .input {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   border-bottom: 1px solid #cccccc;
 }
 
@@ -751,7 +785,7 @@ img {
 .contacts-board {
   padding: 44px;
   display: flex;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -764,7 +798,7 @@ img {
   margin-bottom: 25px;
   padding-bottom: 23px;
   display: flex;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--grey);
 }
 
 .contacts-left {
@@ -785,20 +819,20 @@ img {
 }
 
 .contacts-link {
-  color: #CC9933;
+  color: var(--gold);
   transition: color .2s ease;
 }
 
 .contacts-link:focus {
-  border: 1px solid #cc9933;
+  border: 1px solid var(--gold);
 }
 
 .contacts-link:hover {
-  color: #e9c479;
+  color: var(--gold-light);
 }
 
 .contacts-link:active {
-  color: #a47312;
+  color: var(--gold-dark);
 }
 
 table {
@@ -813,7 +847,7 @@ td {
   padding-bottom: 25px;
   table-layout: fixed;
   vertical-align: top;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--grey);
 }
 
 .table-adress {
@@ -844,7 +878,7 @@ td {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-box {
